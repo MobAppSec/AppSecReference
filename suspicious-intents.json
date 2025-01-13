@@ -1,0 +1,80 @@
+[
+  {
+    "category": "Sensitive System Actions",
+    "intents": [
+      "com.android.settings/.Settings",
+      "android.intent.action.MASTER_CLEAR",
+      "android.intent.action.DEVICE_ADMIN_ENABLED",
+      "com.android.systemui/.recents.RecentsActivity"
+    ]
+  },
+  {
+    "category": "Debugging or Testing",
+    "intents": [
+      "android.intent.action.DEBUG",
+      "com.testapp.debug/.DebugActivity",
+      "android.intent.action.DUMP"
+    ]
+  },
+  {
+    "category": "Broadcast Intents with Sensitive Data",
+    "intents": [
+      "android.intent.action.SEND",
+      "android.intent.action.VIEW",
+      "android.intent.action.SMS_RECEIVED"
+    ]
+  },
+  {
+    "category": "Financial or Security Apps",
+    "intents": [
+      "com.bankapp.mobile/.LoginActivity",
+      "com.antivirus.app/.ScanActivity",
+      "com.paymentgateway.app/.TransactionActivity"
+    ]
+  },
+  {
+    "category": "Privilege Escalation",
+    "intents": [
+      "android.intent.action.REBOOT",
+      "com.android.settings/.ChangePasswordActivity",
+      "android.intent.action.GRANT_RUNTIME_PERMISSION"
+    ]
+  },
+  {
+    "category": "Explicitly Exported Intents",
+    "intents": [
+      "com.vulnerable.app/.ExportedActivity",
+      "com.example.app/.ExportedService"
+    ]
+  },
+  {
+    "category": "Intercepting Communication",
+    "intents": [
+      "android.intent.action.CALL",
+      "android.intent.action.NEW_OUTGOING_CALL",
+      "android.intent.action.RESPOND_VIA_MESSAGE"
+    ]
+  },
+  {
+    "category": "Triggering Malicious Behavior",
+    "intents": [
+      "com.malware.app/.FakeUpdateActivity",
+      "android.intent.action.PACKAGE_ADDED",
+      "com.spyware.app/.TrackLocationService"
+    ]
+  },
+  {
+    "category": "Weak Custom Schemes",
+    "intents": [
+      "customscheme://resetpassword?token=abc123",
+      "appscheme://load?url=http://malicious.com"
+    ]
+  },
+  {
+    "category": "Unexpected Permissions",
+    "intents": [
+      "com.example.camera/.TakePictureActivity",
+      "com.example.contactmanager/.SyncService"
+    ]
+  }
+]
